@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jordan's Chat App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="chat">
+        <div class="chat-header">
+            <h2>Chat App</h2>
+        </div>
+        <div class="chat-users">
+            <h3>Users Online:</h3>
+            <ul id="user-list"></ul>
+        </div>
+        <div class="chat-messages" id="messages">
+            <ul id="message-list"></ul>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
